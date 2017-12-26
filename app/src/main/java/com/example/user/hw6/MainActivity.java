@@ -246,11 +246,19 @@ public class MainActivity extends AppCompatActivity {
 
                     }
                     if(i==2){
-
+                        Intent intent = new Intent(MainActivity.this,Main3Activity.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putString("name",editname.getText().toString());
+                        intent.putExtras(bundle);
+                        startActivity(intent);
 
                     }
                     if(i==3){
-
+                        Intent intent = new Intent(MainActivity.this,Main5Activity.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putString("name",editname.getText().toString());
+                        intent.putExtras(bundle);
+                        startActivity(intent);
                     }
 
                 }
