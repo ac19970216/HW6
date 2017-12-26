@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="店名" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editname"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="地址" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editlocal"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="電話" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editnumber"
+            android:layout_weight="1"
+            android:inputType="number"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="新增"
+            android:layout_weight="0.2"/>
+
+        <Button
+            android:id="@+id/edit"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:text="修改"
+            android:layout_weight="0.2"/>
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="59dp"
+            android:layout_height="wrap_content"
+            android:text="刪除"
+            android:layout_weight="0.2"/>
+
+        <Button
+            android:id="@+id/query"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="查詢"
+            android:layout_weight="0.2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/texno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="順序"
+            android:layout_weight="0.1"/>
+
+        <TextView
+            android:id="@+id/texname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="店名"
+            android:layout_weight="0.3"/>
+
+        <TextView
+            android:id="@+id/texlocal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="地址"
+            android:layout_weight="0.4"/>
+
+        <TextView
+            android:id="@+id/texnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="電話"
+            android:layout_weight="0.4"/>
+    </LinearLayout>
+
+</LinearLayout>
