@@ -221,7 +221,21 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onClick(DialogInterface dialogInterface, int i) {
                     if(i==0){
+                        String[] colum={"local"};
+                        Cursor c;
+                        c=dbrw.query("myTable",colum,"title="+"'"+editname.getText().toString()+"'",null,null,null,null);
+                        c.moveToFirst();
+                        String Local = c.getString(0);
 
+                        Intent intent = new Intent(MainActivity.this,Main4Activity.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putString("name",editname.getText().toString());
+                        intent.putExtras(bundle);
+
+                        Bundle bundle1 = new Bundle();
+                        bundle1.putString("local",Local);
+                        intent.putExtras(bundle1);
+                        startActivity(intent);
                     }
                     if(i==1){
                         Intent intent = new Intent(MainActivity.this,Main2Activity.class);
